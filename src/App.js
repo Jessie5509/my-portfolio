@@ -1,24 +1,19 @@
-import './App.css';
-import { motion } from "framer-motion"
+import './index.css';
+import Home from './components/Home'
+import About from './components/About'
+import Projects from './components/Projects'
 
 function App() {
   return (
-    <div className="App">
-      <motion.div
-        className="box"
-        animate={{
-          scale: [1, 2, 2, 1, 1],
-          rotate: [0, 0, 180, 180, 0],
-          borderRadius: ["0%", "0%", "50%", "50%", "0%"]
-        }}
-        transition={{
-          duration: 2,
-          ease: "easeInOut",
-          times: [0, 0.2, 0.5, 0.8, 1],
-          repeat: Infinity,
-          repeatDelay: 1
-        }}
-      />
+    <div className="main-container bg-[url('./assets/img/neon-light.jpg')] w-full h-[60rem] bg-cover relative">
+      <div className="absolute left-[12.5%] w-3/4">
+        <section className="my-4 text-white text-3xl">
+          JN
+        </section>
+        <Home />
+        <About />
+        <Projects />
+      </div>
     </div>
   );
 }
