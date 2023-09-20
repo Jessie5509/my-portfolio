@@ -1,0 +1,36 @@
+{
+    "projects": [
+        {
+            "name": "Recetario",
+            "description": "pepe",
+            "tags": [
+                "React",
+                "Vue",
+                "Node.js",
+                "Tailwindcss",
+                "JavaScript",
+                "MongoDB",
+                "Express.js"
+            ],
+            "img": "url pepe",
+            "gitLink": "link del repo",
+            "linkDemo": "una demo preview"
+        },
+        {
+            "name": "E-commerce",
+            "description": "pepe",
+            "tags": [
+                "React",
+                "Vue",
+                "Node.js",
+                "Tailwindcss",
+                "JavaScript",
+                "MongoDB",
+                "Express.js"
+            ],
+            "img": "url pepe",
+            "gitLink": "link del repo",
+            "linkDemo": "una demo preview"
+        }
+    ]
+}
