@@ -25,7 +25,7 @@ function App() {
 
   return (
     <>
-      <div className="main-container bg-[url('./assets/img/neon-light.jpg')] w-full h-[150em] bg-cover relative">
+      <div className="main-container bg-[url('./assets/img/clouds.jpg')] w-full h-[200em] bg-cover bg-center relative">
         <div className="absolute left-[12.5%] w-3/4">
           <NavBar />
           <Home />

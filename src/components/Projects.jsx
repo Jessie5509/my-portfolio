@@ -1,7 +1,7 @@
 export const Projects = () => {
   return (
     <div>
-      <section className="text-3xl font-serif text-white">
+      <section className="text-3xl font-serif text-white text-center">
         Projects section
       </section>
 

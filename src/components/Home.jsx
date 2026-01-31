@@ -9,12 +9,12 @@ export const Home = () => {
         transition={{
           duration: 1,
           ease: "easeInOut",
-          delay: 0.2,
+          delay: 0.1,
           type: "spring",
         }}
-        className="flex justify-center text-6xl max-w-lg text-white font-general font-light"
+        className="flex text-sm max-w-lg text-white font-general font-light"
       >
-        Hi! I'm Jess a Full Stack Developer
+        Hi! I'm Jess
       </motion.p>
 
       <motion.h1
@@ -23,7 +23,7 @@ export const Home = () => {
         transition={{
           duration: 1,
           ease: "easeInOut",
-          delay: 0.2,
+          delay: 0.1,
           type: "spring",
         }}
         className="title"
@@ -31,9 +31,9 @@ export const Home = () => {
         <span>Tech for</span>
         <div class="message">
           <div class="word1">education</div>
-          <div class="word2">medicine</div>
+          <div class="word2">healthcare</div>
           <div class="word3">community</div>
-          <div class="word4">world</div>
+          <div class="word4">inclusion</div>
         </div>
       </motion.h1>
       <motion.div
@@ -47,8 +47,36 @@ export const Home = () => {
         }}
         className="flex flex-row items-center"
       >
-        <a href="#" className="bg-[url('./assets/img/github_icon.svg')] bg-cover w-12 h-12"></a>
-        <a href="#" className="bg-[url('./assets/img/linkedin.svg')] bg-cover w-8 h-8"></a>
+        <div className="flex items-center gap-4">
+          <a
+            href="https://github.com/Jessie5509"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 bg-[url('./assets/img/github_light.svg')] bg-no-repeat bg-center bg-contain
+               focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-md"
+          >
+            <span className="sr-only">GitHub</span>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jess-nu/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-8 h-8 bg-[url('./assets/img/linkedin.svg')] bg-no-repeat bg-center bg-contain
+               focus:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+          >
+            <span className="sr-only">LinkedIn</span>
+          </a>
+
+          <a
+            href="/assets/JessicaNunez.pdf"
+            download
+            className="px-3 py-1 text-sm font-medium bg-white/10 hover:bg-white/20 rounded-md
+               focus:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            CV
+          </a>
+        </div>
       </motion.div>
     </section>
   );
