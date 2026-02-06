@@ -2,44 +2,49 @@ export const NavBar = () => {
   return (
     <section>
       <nav className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-evenly h-16">
+        <div className="flex items-center justify-evenly h-20">
           <div className="flex items-center space-x-3 group">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-black rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
-              <span className="text-white font-bold text-lg">JN</span>
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-black bg-clip-text text-transparent">
-              Jess
-            </span>
+            <div className="w-12 h-12 bg-[url('./assets/img/5.png')] bg-no-repeat bg-center bg-cover rounded-full shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105"></div>
           </div>
 
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-14">
             <a
               href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              className="text-white hover:text-gray-200 font-medium transition-colors duration-200 relative group"
             >
               Home
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a
-              href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              href="#about"
+              className="text-white hover:text-gray-200 font-medium transition-colors duration-200 relative group"
             >
               About
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+            </a>
+              <a
+              href="#experience"
+              className="text-white hover:text-gray-200 font-medium transition-colors duration-200 relative group"
+            >
+              Experience
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </a>
             <a
-              href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              href="#projects"
+              className="text-white hover:text-gray-200 font-medium transition-colors duration-200 relative group"
             >
               Projects
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
             </a>
           </div>
 
           <div className="flex items-center space-x-4">
-            <button className="hidden md:block bg-gradient-to-r from-blue-600 to-black text-white px-6 py-2 rounded-full font-medium hover:from-blue-700 hover:to-black transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform">
+            <a
+              href="#contact"
+              className="hidden md:block bg-black text-white px-6 py-2 rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+            >
               Reach Me!
-            </button>
+            </a>
 
             {/* Mobile menu button */}
             <button
@@ -79,6 +84,12 @@ export const NavBar = () => {
               className="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
             >
               About
+            </a>
+            <a
+              href="#"
+              className="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+            >
+              Experience
             </a>
             <a
               href="#"

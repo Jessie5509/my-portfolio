@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../assets/img/avatar5.png"
+import avatar from "../assets/img/avatar.png"
 
 export const About = () => {
   return (
@@ -27,7 +27,7 @@ export const About = () => {
     //   </div>
     // </main>
     <main>
-      <section className="min-h-screen text-white py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8">
+      <section id="about" className="min-h-screen text-white py-16 px-6 flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="w-full md:w-5/12 flex justify-center h-full md:justify-end">
           <img
             src={avatar}

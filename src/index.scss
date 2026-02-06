@@ -11,6 +11,8 @@
       Proxima Nova,
       system-ui,
       sans-serif;
+
+    scroll-behavior: smooth;
   }
 }
 
@@ -48,20 +50,18 @@
   margin-right: 0;
 }
 
-/* Message now sits inline after the span, not absolutely far away */
 .message {
-  position: relative; /* relative to itself for absolutely-positioned children */
-  display: inline-block; /* sits next to the span; the whole .title is inline-flex */
+  position: relative;
+  display: inline-block;
   vertical-align: baseline;
-  margin-left: 0.6rem; /* separacion entre "Tech for" y la caja */
+  margin-left: 0.6rem;
   overflow: hidden;
-  height: 1em; /* muestra una línea */
-  min-width: 10ch; /* evita saltos si palabra muy corta */
+  height: 1em;
+  min-width: 10ch;
   background: cadetblue;
-  padding: 0; /* si usas fondo, añade padding */
+  padding: 0;
 }
 
-/* Stack words inside .message and animate them (no layout shift) */
 .message > div {
   position: absolute; /* apiladas dentro de .message */
   left: 0;
@@ -80,7 +80,6 @@
   animation-fill-mode: both;
 }
 
-/* delays (divide la duración entre el número de palabras) */
 .message > div:nth-child(1) {
   animation-delay: 0s;
 }
@@ -245,6 +244,28 @@
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
   line-height: 1.4;
   word-spacing: 100vw;
+}
+
+.blur-c {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        backdrop-filter: blur(0.5px);
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.15));
+    }
+}
+
+.background {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(3px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
 /* Scroll sections */
